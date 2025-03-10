@@ -22,26 +22,26 @@ bincode = { version = "2.0.0-rc.3", default-features = false, features = [
     "serde",
 ] }
 bytes = "1.5.0"
-cairo-lang-casm = "=2.7.0"
-cairo-lang-compiler = "=2.7.0"
-cairo-lang-filesystem = "=2.7.0"
-cairo-lang-runner = "=2.7.0"
-cairo-lang-sierra = "=2.7.0"
-cairo-lang-sierra-ap-change = { version = "2.7.0", default-features = false }
-cairo-lang-sierra-gas = { version = "2.7.0", default-features = false }
-cairo-lang-sierra-to-casm = "=2.7.0"
-cairo-lang-sierra-generator = "=2.7.0"
-cairo-lang-sierra-type-size = { version = "2.7.0", default-features = false }
-cairo-lang-starknet = "=2.7.0"
+cairo-lang-casm = "=2.11.1"
+cairo-lang-compiler = "=2.11.1"
+cairo-lang-filesystem = "=2.11.1"
+cairo-lang-runner = "=2.11.1"
+cairo-lang-sierra = "=2.11.1"
+cairo-lang-sierra-ap-change = { version = "2.11.1", default-features = false }
+cairo-lang-sierra-gas = { version = "2.11.1", default-features = false }
+cairo-lang-sierra-to-casm = "=2.11.1"
+cairo-lang-sierra-generator = "=2.11.1"
+cairo-lang-sierra-type-size = { version = "2.11.1", default-features = false }
+cairo-lang-starknet = "=2.11.1"
 cairo-lang-hints-test-runner = { path = "./cairo-lang-hints-test-runner" }
-cairo-lang-test-plugin = "=2.7.0"
-cairo-lang-utils = "=2.7.0"
+cairo-lang-test-plugin = "=2.11.1"
+cairo-lang-utils = "=2.11.1"
 cairo-oracle-hint-processor = { path = "./cairo-oracle-hint-processor"}
 cairo-proto-build = { path = "./cairo-proto-build", default-features = false }
 cairo-proto-serde = { path = "./cairo-proto-serde" }
 cairo-io-serde = { path = "./cairo-io-serde" }
 cairo-felt = "0.9.1"
-cairo-vm = { git = "https://github.com/raphaelDkhn/cairo-vm.git", rev = "2738ec0", features = [
+cairo-vm = { git = "https://github.com/Tbelleng/cairo-vm", features = [
     "std",
     "cairo-1-hints",
 ] }
@@ -65,7 +65,7 @@ prost = "0.12.3"
 prost-types = "0.12.3"
 rayon = "1.8.1"
 reqwest = { version = "0.11.23", features = ["blocking", "json"] }
-scarb = { git = "https://github.com/software-mansion/scarb.git", rev = "v2.7.0" }
+scarb = { git = "https://github.com/software-mansion/scarb.git", rev = "v2.11.1" }
 scarb-metadata = "1.12.0"
 scarb-ui = "0.1.5"
 serde = { version = "1.0.195", features = ["derive"] }
