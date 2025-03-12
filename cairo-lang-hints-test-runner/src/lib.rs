@@ -205,9 +205,9 @@ impl TestCompiler {
             starknet: true,
             add_statements_functions: true,
             add_statements_code_locations: true,
-            contract_crate_ids: None,  // TODO: Add contract crate ids
+            contract_crate_ids: None,    // TODO: Add contract crate ids
             contract_declarations: None, // TODO: Add contract declarations
-            executable_crate_ids: None, // TODO: Add executable crate ids
+            executable_crate_ids: None,  // TODO: Add executable crate ids
         };
 
         compile_test_prepared_db(
@@ -334,7 +334,7 @@ pub fn run_tests(
                     &name,
                     false,
                     None,
-                    None
+                    None,
                 );
 
                 Ok((
