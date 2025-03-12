@@ -45,13 +45,19 @@ struct Args {
     #[clap(long)]
     append_return_values: Option<bool>,
 
-    #[clap(long)]
+    #[clap(
+        long = "cairo-pie-output",
+        conflicts_with_all = ["proof-mode", "air-private-input", "air-public-input"]
+    )]
     cairo_pie_output: Option<PathBuf>,
 
-    #[clap(long)]
+    #[clap(long = "air-public-input", requires = "proof-mode")]
     air_public_input: Option<PathBuf>,
 
-    #[clap(long = "air_private_input")]
+    #[clap(
+        long = "air_private_input",
+        requires_all = ["proof-mode", "trace-file", "memory-file"] 
+    )]
     air_private_input: Option<PathBuf>,
 
     #[clap(long)]
