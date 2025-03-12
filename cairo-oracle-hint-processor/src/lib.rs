@@ -186,7 +186,7 @@ pub fn run_1(
     }
 
     if let Some(ref file_path) = cairo_pie_output {
-        runner.get_cairo_pie()?.write_zip_file(file_path)?
+        runner.get_cairo_pie()?.write_zip_file(file_path, proof_mode)?
     }
 
     if let Some(trace_path) = trace_file {
